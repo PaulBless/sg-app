@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/icon.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iWt15JqbkToHEnAYVVPUKaYkApqoXh0&libraries&callback=initMap" async defer></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="page-transition">
     
@@ -129,7 +130,7 @@
                 <div class="row">
                     <!--Start Contact Page Top single-->
                     <div class="col-xl-4 col-lg-4">
-                        <div class="contact-page__top-single text-center">
+                        <div class="contact-page__top-single text-center wow fadeInUp" data-wow-delay="0.1s">
                             <div class="icon">
                                 <span class="icon-placeholder"></span>
                             </div>
@@ -145,7 +146,7 @@
 
                     <!--Start Contact Page Top single-->
                     <div class="col-xl-4 col-lg-4">
-                        <div class="contact-page__top-single style2 text-center">
+                        <div class="contact-page__top-single style2 text-center wow fadeInUp" data-wow-delay="0.3s">
                             <div class="icon">
                                 <span class="icon-phone-call"></span>
                             </div>
@@ -159,7 +160,7 @@
 
                     <!--Start Contact Page Top single-->
                     <div class="col-xl-4 col-lg-4">
-                        <div class="contact-page__top-single bdrnone text-center">
+                        <div class="contact-page__top-single bdrnone text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="icon">
                                 <span class="icon-message"></span>
                             </div>
@@ -180,40 +181,40 @@
         <div class="contact-page__bottom">
             <div class="container">
                 <div class="contact-page__bottom-inner">
-                    <div class="title-box">
+                    <div class="title-box" data-aos="slideUp">
                         <h2>Need Any Help? Drop us a Line</h2>
                     </div>
                     <form action="" class="contact-page__form contact-form-validated" novalidate="novalidate">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 " data-aos="fade-right">
                                 <div class="contact-page__input-box">
                                     <input type="text" placeholder="Full Name" name="name">
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
                                 <div class="contact-page__input-box">
                                     <input type="email" placeholder="Email address" name="email">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
                                 <div class="contact-page__input-box">
                                     <input type="text" placeholder="Phone" name="phone" required>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
                                 <div class="contact-page__input-box">
                                     <input type="text" placeholder="Subject" name="subject">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
                                 <div class="contact-page__input-box">
                                     <textarea name="message" placeholder="Type your Message"></textarea>
                                 </div>
-                                <div class="contact-page__btn">
+                                <div class="contact-page__btn" data-aos="zoom-in">
                                     <button type="submit" class="thm-btn">
                                         <span class="txt">Send Message</span>
                                     </button>
@@ -229,7 +230,10 @@
 
 
     <!-- Map Area-->
-    <div id="google-map-one">
+    <div id="google-map-one " data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
         <div id="map"></div>
     </div>
     <!-- End Map -->   

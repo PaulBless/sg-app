@@ -1,3 +1,4 @@
+
 (function () {
     'use strict';
 
@@ -262,8 +263,10 @@
     }
 
     // :: WOW Active Code
-
     new WOW().init();
+
+    // :: AOS Initialized
+    AOS.init();
 
     // :: Jarallax Active Code
 
